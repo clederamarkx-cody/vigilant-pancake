@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sienna Roasts | Artisan Coffee & Roastery</title>
+    <meta name="description"
+        content="Experience the finest artisan coffee at Sienna Roasts. Hand-picked beans, expert roasting, and a cozy atmosphere. Order online for the perfect brew.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+</head>
+
+<body>
+    <header class="header" id="navbar">
+        <nav class="nav container">
+            <a href="#" class="logo">Sienna<span>Roasts</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Our Story</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#contact" class="nav-link">Visit Us</a></li>
+                </ul>
+            </div>
+            <a href="#menu" class="btn btn-primary nav-cta">Order Now</a>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="hero">
+            <div class="hero-container container grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">Experience the Art of <span>Perfect Roasting</span></h1>
+                    <p class="hero-description">From sun-drenched highlands to your morning cup, we source only the
+                        finest ethical beans to craft unforgetable flavors.</p>
+                    <div class="hero-btns">
+                        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-img-wrapper">
+                    <div class="hero-blob"></div>
+                    <img src="hero.jpg" alt="Artisan Coffee Pouring" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured section container">
+            <div class="section-header">
+                <h2 class="section-title">The Roaster's Selection</h2>
+                <p class="section-subtitle">Our seasonal favorites, roasted in small batches for peak freshness.</p>
+            </div>
+            <div class="featured-grid grid">
+                <div class="product-card glass-card">
+                    <img src="hero.jpg" alt="Dark Roast" class="product-img">
+                    <div class="product-info">
+                        <h3>Midnight Velvet</h3>
+                        <p>Dark Roast • Notes of Dark Chocolate & Cherry</p>
+                        <span class="price">$18.00</span>
+                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card glass-card">
+                    <img src="hero.jpg" alt="Medium Roast" class="product-img">
+                    <div class="product-info">
+                        <h3>Golden Hour</h3>
+                        <p>Medium Roast • Notes of Caramel & Honey</p>
+                        <span class="price">$16.50</span>
+                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card glass-card">
+                    <img src="hero.jpg" alt="Light Roast" class="product-img">
+                    <div class="product-info">
+                        <h3>Ethereal Bloom</h3>
+                        <p>Light Roast • Notes of Jasmine & Citrus</p>
+                        <span class="price">$19.00</span>
+                        <button class="btn btn-sm btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="about section" id="about">
+            <div class="about-container container grid">
+                <div class="about-img-wrapper">
+                    <img src="hero.jpg" alt="Our Roastery" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Rooted in <span>Excellence</span></h2>
+                    <p>Sienna Roasts began in a small garage with one goal: to find the soul of every bean. We work
+                        directly with farmers to ensure ethical practices and the highest quality harvest.</p>
+                    <p>Our roasting process is a blend of science and intuition, pulling out the unique profiles that
+                        make every cup a journey.</p>
+                    <a href="#" class="btn btn-secondary">Read Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Menu Section -->
+        <section class="menu section container" id="menu">
+            <div class="section-header">
+                <h2 class="section-title">The Daily Brew</h2>
+                <p class="section-subtitle">Freshly prepared beverages for every coffee lover.</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-target="hot">Hot Coffee</button>
+                <button class="tab-btn" data-target="cold">Cold Brews</button>
+                <button class="tab-btn" data-target="bakery">Bakery</button>
+            </div>
+
+            <div class="menu-grid grid" id="menu-container">
+                <!-- Menu items here -->
+                <div class="menu-item hot">
+                    <div class="menu-details">
+                        <h4>Classic Latte</h4>
+                        <p>Rich espresso with silky steamed milk.</p>
+                    </div>
+                    <span class="menu-price">$4.50</span>
+                </div>
+                <div class="menu-item hot">
+                    <div class="menu-details">
+                        <h4>Cappuccino</h4>
+                        <p>Equal parts espresso, milk, and foam.</p>
+                    </div>
+                    <span class="menu-price">$4.25</span>
+                </div>
+                <div class="menu-item cold">
+                    <div class="menu-details">
+                        <h4>Nitro Cold Brew</h4>
+                        <p>Smooth, creamy, and naturally sweet.</p>
+                    </div>
+                    <span class="menu-price">$5.50</span>
+                </div>
+                <div class="menu-item bakery">
+                    <div class="menu-details">
+                        <h4>Almond Croissant</h4>
+                        <p>Flaky, buttery, and filled with almond cream.</p>
+                    </div>
+                    <span class="menu-price">$3.75</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container container grid">
+            <div class="footer-content">
+                <a href="#" class="logo">Sienna<span>Roasts</span></a>
+                <p>Crafting excellence in every cup since 2012.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2026 Sienna Roasts. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
