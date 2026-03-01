@@ -61,5 +61,19 @@ tabBtns.forEach(btn => {
     });
 });
 
-// Initial filter (Hot Coffee)
-document.querySelector('.tab-btn[data-target="hot"]').click();
+// Floating CTA Visibility
+const floatingCta = document.getElementById('floating-cta');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        floatingCta.classList.add('visible');
+    } else {
+        floatingCta.classList.remove('visible');
+    }
+});
+
+document.querySelectorAll('.product-card, .hero-content, .hero-img-wrapper, .gallery-item, .newsletter-container').forEach(el => {
+    el.classList.add('reveal-item');
+    revealObserver.observe(el);
+});
+
+console.log('Sienna Roasts Enhanced');
